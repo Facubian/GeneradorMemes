@@ -1,0 +1,156 @@
+.headerContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.seleccionador{
+  color: white;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 1px 3px 7px #000;
+  text-transform: uppercase;
+  font-size: 42px;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 1px;
+}
+  
+.memeGeneratorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 400px;
+  margin-right: 400px;
+  background-color: #7a96b3;
+  border-radius: 20px;
+}
+  
+.memeSettings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  
+.titleText {
+  margin: 25px 0 5px 0;
+}
+  
+input {
+  margin: 5px 0 8px 0;
+}
+  
+select,
+input {
+  height: 35px;
+  width: 300px;
+  font-size: 18px;
+}
+  
+button {
+  height: 35px;
+  width: 160px;
+  margin: 5px 0;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(196, 196, 196);
+  transition: all 0.3s ease-in-out;
+}
+  
+  button:hover {
+    transform: scale(1.02);
+    background-color: rgb(176, 176, 176);
+  }
+  
+  .btnDownload {
+    width: 310px;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 425px;
+    width: 425px;
+    background-color: #000;
+  }
+  
+  .memeImage {
+    height: 410px;
+    width: 410px;
+  }
+  
+  .memeText {
+    position: absolute;
+    margin: auto;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    word-wrap: break-word;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 1px 3px 3px black;
+  }
+  
+  /* Animation */
+  
+  @keyframes movement {
+    from {
+      transform: rotate(15deg);
+    }
+    to {
+      transform: rotate(-25deg);
+    }
+  }
+  
+  @keyframes invert {
+    from {
+      filter: invert(0);
+    }
+    to {
+      filter: invert(100%);
+    }
+  }
+  
+  /* MEDIA QUERIES */
+  
+  @media only screen and (max-width: 900px) {
+    .logo {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
+  
+    .memeGeneratorContainer {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    figure {
+      height: 325px;
+      width: 325px;
+    }
+  
+    .memeImage {
+      height: 300px;
+      width: 300px;
+    }
+  }
